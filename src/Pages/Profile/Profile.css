@@ -1,0 +1,175 @@
+.Discover {
+    background: var(--secondary-bg);
+    padding: 30px;
+}
+.Discover hr{
+    border: 1px solid #777;
+}
+.user_discover .text .btn_compo {
+    background: transparent;
+    color: var(--text-color);
+    margin-top: 20px;
+    transition: var(--main-transition);
+    border: 1px solid var(--bg-danger);
+}
+.user_discover .text .btn_compo:hover {
+    border: 1px solid #4b4b4b;
+}
+.user_discover {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.user_discover img {
+    width: calc(95% / 3);
+    border-radius: 20px;
+    flex-grow: 1;
+}
+.user_discover .text {
+    flex-grow: 1;
+    width: calc(95% / 3);
+    padding: 20px;
+
+}
+.user_discover .text h2{
+    color: var(--color-of-White);
+    margin: 20px 0;
+    /* flex-grow: 1; */
+    font-size: 25px;
+
+}
+.user_discover .text p{
+    /* flex-grow: 1; */
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-normal);
+    width: 80%;
+}
+.user_discover .text span {
+    color: var(--color-of-White);
+    text-transform: capitalize;
+    background: var(--bg-danger);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.user_discover ul{
+    flex-grow: 1;
+    width: calc(95% / 3);
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--secondary_2-bg);
+}
+.user_discover ul li  {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.user_discover ul li h6 {
+    color: var(--text-normal);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+}
+.user_discover ul li span{
+    color: var(--text-color);
+
+}
+@media (max-width:768px) {
+    .user_discover{
+        flex-direction: column;
+
+    }
+    .user_discover img {
+        width: 100%;
+    }
+    .user_discover .text {
+        width: 100%;
+    }
+    .user_discover ul {
+        width: 100%;
+    }
+}
+.MostPopular_clips {
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+.MostPopular_clips .btn_color {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.MostPopular_clips .cards{
+
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap: 30px;
+justify-content: center;
+align-items: center;
+}
+.MostPopular_clips .card .img_container {
+height: 200px;
+}
+.MostPopular_clips .card img{
+    width: 100%;
+    
+    object-fit: fill;
+    height: 100%;
+    border-radius: 30px;
+
+}
+.MostPopular_clips .card {
+ padding: 30px 15px;   
+ background: var(--secondary_2-bg);
+ border-radius: 30px;
+ position: relative;
+}
+.MostPopular_clips .card .img_container span{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 50px;
+}
+.MostPopular_clips .card .img_container span i {
+    position: relative;
+    z-index: 2;
+}
+.MostPopular_clips .card .img_container span i::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40%;
+    background: var(--text-color);
+    border-radius: 50%;
+    z-index: -1;
+}
+.MostPopular_clips .card .text  {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10px 0; 
+ }
+ .MostPopular_clips .card .text h5 {
+    font-size: 15px;
+
+   color: var(--color-of-White);
+ }
+
+ .MostPopular_clips .card .text  span {
+    color: var(--color-of-White);
+    font-weight: 300;
+ }
+.MostPopular_clips .card .text i {
+    color: var(--text-color);
+    margin-right: 5px;
+}

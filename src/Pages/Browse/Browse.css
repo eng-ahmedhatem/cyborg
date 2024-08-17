@@ -1,0 +1,368 @@
+.panner {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    height: max-content;
+}
+.Featured_Games{
+    height: 100%;
+    background: var(--main-bg);
+    padding: 20px;
+    width: 60%;
+    border-radius: 30px;
+    flex-grow: 2;
+}
+.Featured_Games .cards{
+    margin-top: 20px;
+}
+.Featured_Games .Card{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+align-content: center;
+justify-content: center;
+flex-direction: column;
+border-radius: 20px;
+height: 100%;
+}
+.Featured_Games .Card .img {
+    width: 100%;
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+
+}
+.Featured_Games .Card .img span {
+    position: absolute;
+    bottom: -20%;
+    border-radius: 20px;
+    background: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-weight: bold;
+    width: 150px;
+    height: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--main-transition);
+    z-index: -1;
+    font-size: 14px;
+    opacity: 0;
+}
+.Featured_Games .Card .img:hover span {
+    opacity: 1;
+    z-index: 2;
+    bottom: 5%;
+
+}
+.Featured_Games .Card img {
+border-radius: 20px;
+flex-basis: 80%;
+width: 100%;
+height: 100%;
+}
+
+.Featured_Games .Card .text {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Featured_Games .Card .row-1 , 
+.Featured_Games .Card .row-2{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    flex-direction: column;
+
+}
+.Featured_Games .Card .row-1 {
+    color: var(--text-light);
+
+    
+}
+.Featured_Games .Card .row-1 h4{
+    font-size: 15px;
+}
+.Featured_Games .Card .row-1 p{
+    color: var(--text-normal);
+    font-size: 14px;
+    
+}
+.Featured_Games .Card .row-2 i {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.Featured_Games .Card .row-2 span {
+    color: var(--text-light);
+    font-size: 13px;
+    display: flex;
+
+
+}
+.Featured_Games .Card .row-2 span:first-child i{
+    color: gold;
+}
+.Featured_Games .Card .row-2 i {
+    color: var(--bg-danger);
+}
+/* slider arrow  */
+.arrow {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+
+}
+@media (max-width:1200px) {
+    .arrow {
+        right: 15%;
+    }
+}
+@media (max-width:768px) {
+    .arrow {
+        right: 20%;
+    }
+}
+.arrow svg{
+    color: #777;
+    transition: var(--main-transition);
+}
+.arrow svg:hover{
+    color: var(--bg-danger);
+}
+.arrow-left{
+    right: 3%;
+}
+.TopDownloaded{
+    background: var(--secondary-bg);
+    border-radius: 25px;
+    padding: 20px;
+    padding-bottom: 70px;
+    position: relative;
+    flex-grow: 1;
+    
+}
+.TopDownloaded .rows .row  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #777;
+    padding: 20px;
+}
+.TopDownloaded .rows .row >div:first-child {
+    display: flex;
+    align-items: center;
+}
+.TopDownloaded .btn_transparent{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    border:   none;
+    border-radius: 50%;
+    color: var(--text-color);
+}
+.TopDownloaded .rows .row .btn_compo{
+    border:   none;
+    border-radius: 50%;
+    background: #222 !important;
+    font-size: 16px;
+    color: var(--text-color);
+}
+.TopDownloaded .rows .row  img {
+    width: 100px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.TopDownloaded .rows .row .text div:first-child h4 {
+    color: var(--text-light);
+    font-size: 15px;
+
+}
+.TopDownloaded .rows .row .text div:first-child span {
+    color: var(--text-normal);
+    font-size: 14px;
+    display: inline-block;
+}
+.TopDownloaded .rows .row .text div:last-child span {
+    color: var(--text-light);
+    margin-right: 15px;
+}
+.TopDownloaded .rows .row .text div:last-child span i{
+margin-right: 10px;
+}
+.TopDownloaded .rows .row .text div:last-child span:first-child i {
+    color: gold;
+}
+.TopDownloaded .rows .row .text div:last-child span:last-child i {
+    color: var(--text-color);
+}
+/* start StartStream  */
+.StartStream{
+    position: relative;
+}
+.StartStream h1{
+    text-align: center;
+}
+.StartStream .cards {
+    display: grid;
+
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    place-items: center;
+    /* place-content: center;
+    justify-content: center;
+    align-items: center; */
+    padding-bottom: 80px;
+}
+.StartStream .cards .Card {
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #777;
+
+}
+.StartStream .cards .Card img {
+    border-radius: 50%;
+    margin: 15px;
+    margin-left: 0;
+}
+.StartStream .cards .Card h2 {
+font-size: 20px;
+color: var(--color-of-White);
+margin-bottom: 15px;
+}
+.StartStream .cards .Card p {
+    font-size: 15px;
+    line-height: 2;
+    text-transform: capitalize;
+    color: var(--text-normal);
+}
+
+.StartStream .btn_color {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/* MostPopular_Live  */
+.MostPopular_Live {
+    background: var(--main-bg);
+    padding: 30px;
+    position: relative;
+    padding-bottom: 80px;
+} 
+
+.MostPopular_Live .cards{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    place-items: center;
+}
+.MostPopular_Live .cards .Card  {
+    width: 100%;
+}
+.MostPopular_Live .cards .Card .img_container {
+    position: relative;
+}
+.MostPopular_Live .cards .Card .img_container:hover span{
+    opacity: 1;
+
+}
+.MostPopular_Live .cards .Card .img_container img{
+    width: 100%;
+    border-radius: 30px;
+    width: 100%;
+}
+.MostPopular_Live .cards .Card .img_container span{
+    position: absolute;
+    border-radius: 30px;
+    color: var(--color-of-White);
+    background-color: var(--secondary_3-bg);
+    padding:5px 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: var(--main-transition);
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+.MostPopular_Live .cards .Card .img_container span svg {
+    font-size: 18px;
+    margin-right: 5px;
+}
+.MostPopular_Live
+.cards .Card .img_container span:nth-child(1){
+    top: 5%;
+    right: 5%;
+}
+.MostPopular_Live .cards .Card .img_container span:nth-child(2){
+    bottom: 10%;
+    right: 52%;
+}
+.MostPopular_Live .cards .Card .img_container span:nth-child(3){
+    bottom: 10%;
+    left: 52%;
+}
+.MostPopular_Live .cards .Card .row-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.MostPopular_Live .cards .Card .row-2 img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right: 10px;
+}
+.MostPopular_Live .cards .Card .row-2 .text span {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+
+}
+.MostPopular_Live .cards .Card .row-2 .text span i {
+color: var(--secondary_3-bg);
+position: relative;
+z-index: 1;
+margin-right: 10px;
+font-size: 20px;
+
+}
+.MostPopular_Live .cards .Card .row-2 .text span i::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: #fff;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    border-radius: 50%;
+    height: 50%;
+}
+.MostPopular_Live .cards .Card .row-2 .text h4{
+color: var(--color-of-White);
+font-weight: 700;
+font-size: 20px;
+} 
+
+.MostPopular_Live .btn_color {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -22.5px;
+}
+@media (max-width:768px) {
+    .MostPopular_Live .cards .Card .row-2 {
+        justify-content: center !important;
+    }
+    .MostPopular_Live .cards .Card .row-2 img {
+        margin-right: 20px;
+    }
+}

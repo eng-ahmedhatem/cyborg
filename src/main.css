@@ -1,0 +1,154 @@
+
+:root {
+    --main-transition:0.3s;
+    --main-bg:#18181C;
+    --bg-danger:#8d1e3f;
+    --secondary-bg:#18181C;
+    --secondary_2-bg:#1E2122;
+    --secondary_3-bg:#8D153E;
+    --text-normal:#D1CDC7;
+    --text-color:#EC6991;
+    --text-light:#fff;
+    --text-small:14px;
+    --color-of-White:#E8E6E3;
+    --sections-space:50px;
+}
+*{
+    font-family: "Poppins", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--main-bg);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border:  none ;
+
+}
+.cursor_grabbing{
+    cursor: grabbing;
+}
+section {
+    margin-bottom: var(--sections-space);
+    border-radius: 20px;
+}
+.SectionTitle{
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-transform: capitalize !important;
+}
+.SectionTitle .text_light{
+display: inline-block;
+margin-right: 10px;
+color: var(--color-of-White);
+text-decoration: underline;
+}
+.SectionTitle .text_color{
+color: var(--text-color);
+}
+@media (max-width:768px) {
+    .SectionTitle{
+        font-size: 25px;
+    }
+}
+.btn_compo{
+    border-radius: 30px;
+    text-transform: capitalize;
+    transition: var(--main-transition);
+    cursor: pointer;
+    font-size: 14px;
+
+}
+.btn_color{
+    background: var(--secondary_3-bg);
+    color: var(--text-light);
+    font-size: 14px;
+
+}
+.btn_transparent_done{
+background: transparent;
+color: var(--text-normal);
+border: 1px solid var(--text-normal);
+}
+.btn_transparent{
+    background: transparent;
+    color: var(--bg-danger);
+    border: 1px solid var(--bg-danger);
+    font-weight: bold;
+}
+.btn_color:hover {
+background: var(--main-bg);
+color: var(--text-color);
+
+}
+.container{
+    margin: 0 auto; 
+    width: 90%;
+}
+@media (min-width:576px) {
+    .container{
+        width: 540px ;
+    }
+    
+}
+@media (min-width:768px) {
+    .container{
+        width: 720px;
+    }
+    
+}
+@media (min-width:992px) {
+    .container{
+        width: 95%;
+    }
+    
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1140px;
+    }
+    
+}
+@media (min-width:1400px) {
+    .container{
+        width: 1320px;
+    }
+}
+main {
+    background-color: var(--secondary_2-bg);
+    border-radius: 30px;
+    padding: 60px;
+}
+@media (max-width:768px) {
+    main{
+        margin: 110px auto 0 auto !important;
+        padding: 30px;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--secondary_2-bg); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #545b5f; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

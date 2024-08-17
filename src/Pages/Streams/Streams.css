@@ -1,0 +1,67 @@
+.Streams .TopDownloaded {
+    padding-bottom: 20px !important;
+}
+.Streams .panner ul {
+  counter-reset: count-row-dat-topStream;
+}
+.Streams .panner .RowData_topStream::before {
+position: absolute;
+  counter-increment: count-row-dat-topStream;
+  content: "0" counter(count-row-dat-topStream);
+  color: var(--color-of-White);
+  font-size: 15px;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.Streams .panner .RowData_topStream  {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #777;
+    padding-left: 30px;
+}
+.Streams .panner .RowData_topStream:last-child {
+    border-bottom: none;
+}
+.Streams .panner .RowData_topStream  img {
+    border-radius: 50%;
+}
+.Streams .panner .RowData_topStream span {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.Streams .panner .RowData_topStream span i {
+  color: var(--secondary_3-bg);
+  position: relative;
+  z-index: 1;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.Streams .panner .RowData_topStream span i::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: #fff;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    border-radius: 50%;
+    height: 50%;
+}
+@media (max-width:432px) {
+    .RowData_topStream{
+        justify-content: center !important;
+    }
+    .RowData_topStream img{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
