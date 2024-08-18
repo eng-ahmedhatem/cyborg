@@ -24,6 +24,7 @@ justify-content: center;
 flex-direction: column;
 border-radius: 20px;
 height: 100%;
+font-family: var(--font-normal)
 }
 .Featured_Games .Card .img {
     width: 100%;
@@ -144,7 +145,8 @@ height: 100%;
     padding-bottom: 70px;
     position: relative;
     flex-grow: 1;
-    
+    font-family: var(--font-normal)
+
 }
 .TopDownloaded .rows .row  {
     display: flex;
@@ -156,6 +158,14 @@ height: 100%;
 .TopDownloaded .rows .row >div:first-child {
     display: flex;
     align-items: center;
+}
+@media (max-width:768px) {
+    .TopDownloaded .rows .row >div:first-child .text div:last-child  span{
+        display: block;
+    
+        
+    }
+    
 }
 .TopDownloaded .btn_transparent{
     position: absolute;
@@ -207,6 +217,7 @@ margin-right: 10px;
 }
 .StartStream h1{
     text-align: center;
+
 }
 .StartStream .cards {
     display: grid;
@@ -214,9 +225,6 @@ margin-right: 10px;
     gap: 30px;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     place-items: center;
-    /* place-content: center;
-    justify-content: center;
-    align-items: center; */
     padding-bottom: 80px;
 }
 .StartStream .cards .Card {
@@ -233,6 +241,7 @@ margin-right: 10px;
 .StartStream .cards .Card h2 {
 font-size: 20px;
 color: var(--color-of-White);
+font-family: var(--font-bold);
 margin-bottom: 15px;
 }
 .StartStream .cards .Card p {
@@ -240,6 +249,8 @@ margin-bottom: 15px;
     line-height: 2;
     text-transform: capitalize;
     color: var(--text-normal);
+    font-family: var(--font-normal);
+
 }
 
 .StartStream .btn_color {
@@ -256,6 +267,7 @@ margin-bottom: 15px;
     padding: 30px;
     position: relative;
     padding-bottom: 80px;
+    font-family: var(--font-normal)
 } 
 
 .MostPopular_Live .cards{
@@ -349,7 +361,7 @@ font-size: 20px;
 .MostPopular_Live .cards .Card .row-2 .text h4{
 color: var(--color-of-White);
 font-weight: 700;
-font-size: 20px;
+font-size: 17px;
 } 
 
 .MostPopular_Live .btn_color {

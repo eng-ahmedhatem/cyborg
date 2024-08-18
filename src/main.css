@@ -12,9 +12,28 @@
     --text-small:14px;
     --color-of-White:#E8E6E3;
     --sections-space:50px;
+    --font-black-italic:"Poppins-BlackItalic";
+    --font-bold:"Poppins-Bold";
+    --font-normal:"Poppins-Medium";
+    --font-light:"Poppins-Light";
+}
+@font-face {
+    font-family: "Poppins-BlackItalic" ;
+    src: url(./Fonts/Poppins/Poppins-BlackItalic.ttf);
+}
+@font-face {
+    font-family: "Poppins-Bold" ;
+    src: url(./Fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "Poppins-Light" ;
+    src: url(./Fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Poppins-Medium" ;
+    src: url(./Fonts/Poppins/Poppins-Light.ttf);
 }
 *{
-    font-family: "Poppins", sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,6 +49,8 @@ a {
 }
 button {
     border:  none ;
+    font-family: var(--font-light)
+
 
 }
 @media (max-width:768px) {
@@ -53,6 +74,7 @@ section {
     margin-bottom: 30px;
     font-weight: 800;
     text-transform: capitalize !important;
+    font-family: var(--font-black-italic , sans-serif) !important;
 }
 .SectionTitle .text_light{
 display: inline-block;

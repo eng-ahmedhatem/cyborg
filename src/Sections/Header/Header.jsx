@@ -22,7 +22,7 @@ let Header = () => {
     })
     e.currentTarget.classList.add("active")
   }
-  useEffect (_=>{
+  useEffect (()=>{
     AOS.init();
   },[])
   return (

@@ -65,9 +65,9 @@ export default function Download_fortNight(Props) {
                 <img src="./Details/details-02.jpg" alt="" />
                 <img src="./Details/details-03.jpg" alt="" />
             </div>
-            <p data-aos="zoom-in-up"  data-aos-duration="500" data-aos-delay="0">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout. You can make a small contribution via PayPal to info [at] templatemo.com and thank you for supporting. If you want to get the PSD source files, please contact us. Lorem ipsum dolor sit consectetur es dispic dipiscingei elit, sed doers eiusmod lisum hored tempor.</p>
+            <p data-aos="zoom-in-up"  data-aos-duration="500" data-aos-delay="400">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout. You can make a small contribution via PayPal to info [at] templatemo.com and thank you for supporting. If you want to get the PSD source files, please contact us. Lorem ipsum dolor sit consectetur es dispic dipiscingei elit, sed doers eiusmod lisum hored tempor.</p>
         </div>
-        <BtnColor btnTitle="download fortnite now!" width="100%" height="45px"/>
+        <BtnColor btnTitle="download fortnite now!" width="100%" height="45px" />
     </section>
   )
 }

@@ -1,6 +1,7 @@
 header{
     position: relative;
     z-index: 2;
+    font-family: var(--font-light)
 }
 header .container {
     display: flex;

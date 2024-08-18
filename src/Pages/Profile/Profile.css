@@ -1,6 +1,7 @@
 .Discover {
     background: var(--secondary-bg);
     padding: 30px;
+    font-family: var(--font-normal);
 }
 .Discover hr{
     border: 1px solid #777;
@@ -11,6 +12,7 @@
     margin-top: 20px;
     transition: var(--main-transition);
     border: 1px solid var(--bg-danger);
+    font-family: var(--font-light);
 }
 .user_discover .text .btn_compo:hover {
     border: 1px solid #4b4b4b;
@@ -129,6 +131,7 @@ height: 200px;
  background: var(--secondary_2-bg);
  border-radius: 30px;
  position: relative;
+ font-family: var(--font-light);
 }
 .MostPopular_clips .card .img_container span{
 position: absolute;
@@ -161,7 +164,7 @@ margin: 10px 0;
  }
  .MostPopular_clips .card .text h5 {
     font-size: 15px;
-
+    letter-spacing: 1px;
    color: var(--color-of-White);
  }
 

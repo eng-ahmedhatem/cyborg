@@ -7,6 +7,7 @@
 }
 .mainBanner p {
     font-size: 20px;
+    font-family: var(--font-normal);
     margin-bottom: 15px;
     color: var(--text-light);
 }
@@ -15,6 +16,7 @@
     font-size: 45px;
     margin-bottom: 15px;
     color: var(--text-light);
+    font-family: var(--font-bold)
 }
 @media (max-width:1000px) { 
     .mainBanner{
@@ -62,6 +64,7 @@ flex-basis: 80%;
 
 .MostPopular .Card .text {
     margin-top: 15px;
+    font-family: var(--font-normal)
 }
 .MostPopular .Card .row-1 , 
 .MostPopular .Card .row-2{
@@ -76,6 +79,7 @@ flex-basis: 80%;
 }
 .MostPopular .Card .row-1 h4{
     font-size: 15px;
+    letter-spacing: 1px;
 }
 .MostPopular .Card .row-1 span{
     font-size: 14px;
@@ -88,7 +92,7 @@ flex-basis: 80%;
 }
 .MostPopular .Card .row-2 p {
     color: var(--text-normal);
-    font-size: 15px;
+    font-size: 14px;
 
 }
 .MostPopular .Card .row-2 span {
@@ -114,6 +118,8 @@ flex-basis: 80%;
     padding-bottom: 60px;
     position: relative;
     margin-bottom: 0;
+    font-family: var(--font-normal)
+
 }
 .YourGaming .row {
     border-bottom: 1px solid var(--text-normal);

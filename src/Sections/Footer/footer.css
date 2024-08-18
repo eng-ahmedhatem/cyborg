@@ -2,6 +2,8 @@ footer {
     text-align: center;
     margin: 30px 0; 
     color: rgb(0, 111, 119);
+    font-family: var(--font-normal)
+
 }
 footer h3 {
     font-size: 20px;
