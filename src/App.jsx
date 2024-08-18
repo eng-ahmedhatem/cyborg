@@ -8,8 +8,8 @@ let App = ()=>{
         <BrowserRouter >
             <Header/>
             <Main>
-                <Routes basename = {"/index.html"}>
-                    <Route path="/index.html" element={<Home/>}/>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/browse" element={<Browse/>}/>
                     <Route path="/details" element={<Details/>}/>
                     <Route path="/streams" element={<Streams/>}/>

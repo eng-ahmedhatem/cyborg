@@ -48,7 +48,7 @@ let Header = () => {
           </div>
           <ul className="nav-links" id="nav-links">
             <li className={`${location.pathname == "/index.html" ? "active": location.pathname == "/"? "active" : ""}`} onClick={e=> handel_Nav_items(e)}>
-              <Link to="/index.html">home</Link>
+              <Link to="/">home</Link>
             </li>
             <li className={location.pathname == "/browse" ? "active": ""} onClick={e=> handel_Nav_items(e)}>
               <Link to="/browse">browse</Link>

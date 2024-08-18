@@ -32,6 +32,15 @@ button {
     border:  none ;
 
 }
+@media (max-width:768px) {
+    main {
+        overflow: hidden;
+    }
+    .container{
+        padding-inline: 10px !important;
+    }
+
+}
 .cursor_grabbing{
     cursor: grabbing;
 }
